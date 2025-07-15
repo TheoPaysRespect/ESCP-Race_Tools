@@ -106,7 +106,7 @@ namespace ESCP_Birthsigns
                 for(int j = 0; j < 3; j++)
                 {
                     HediffDef hd = BirthSigns_ModSettings.CurrentSetDef.birthsignHediffs[i][j];
-                    listing_Standard.Label(" - " + hd.label, -1f, hd.description);
+                    listing_Standard.Label(new TaggedString(" - " + hd.label), -1f, hd.description);
                 }
             }
         }
@@ -118,7 +118,7 @@ namespace ESCP_Birthsigns
             bool flag = false;
             foreach(HediffDef hd in BirthSigns_ModSettings.CurrentSetDef.additionalSigns)
             {
-                listing_Standard.Label(" - " + hd.label, -1f, hd.description);
+                listing_Standard.Label(new TaggedString(" - " + hd.label), -1f, hd.description);
                 flag = true;
             }
 
