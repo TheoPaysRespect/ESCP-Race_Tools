@@ -1,12 +1,13 @@
-﻿using System.Collections.Generic;
+﻿using RimWorld;
+using RimWorld.Planet;
+using System.Collections.Generic;
 using Verse;
-using RimWorld;
 
 namespace ESCP_RaceTools
 {
     class StockGenerator_BuyCorpses : StockGenerator
     {
-        public override IEnumerable<Thing> GenerateThings(int forTile, Faction faction = null)
+        public override IEnumerable<Thing> GenerateThings(PlanetTile forTile, Faction faction = null)
         {
             yield break;
         }

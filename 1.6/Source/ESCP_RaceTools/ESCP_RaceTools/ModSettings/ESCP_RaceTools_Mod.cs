@@ -208,7 +208,7 @@ namespace ESCP_RaceTools
             listing_Standard.CheckboxLabeled("ESCP_RaceTools_EnableSettlementPreference".Translate(), ref settings.ESCP_RaceTools_EnableSettlementPreference, "ESCP_RaceTools_EnableSettlementPreferenceTooltip".Translate() + TooltipStringInit.General_SettlementPreference);
             listing_Standard.Gap();
 
-            listing_Standard.Label("ESCP_RaceTools_SettlementPreferenceIterations".Translate() + " (" + settings.ESCP_RaceTools_SettlementPreferenceIterations + ")", -1, "ESCP_RaceTools_SettlementPreferenceIterationsTooltip".Translate());
+            listing_Standard.Label(new TaggedString("ESCP_RaceTools_SettlementPreferenceIterations".Translate() + " (" + settings.ESCP_RaceTools_SettlementPreferenceIterations + ")"), -1, "ESCP_RaceTools_SettlementPreferenceIterationsTooltip".Translate());
             settings.ESCP_RaceTools_SettlementPreferenceIterations = (float)Math.Round(listing_Standard.Slider(settings.ESCP_RaceTools_SettlementPreferenceIterations, 10, 5000) / 10) * 10;
             listing_Standard.Gap();
 

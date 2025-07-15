@@ -6,7 +6,7 @@ namespace ESCP_RaceTools
     [StaticConstructorOnStartup]
     public class PlantBuildingPod : Plant
     {
-		public override void Tick()
+		protected override void Tick()
 		{
 			base.Tick();
 			if (this.IsHashIntervalTick(2000))
